@@ -20,6 +20,19 @@ input:focus {
     outline: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.x {
+    position: absolute;
+    color: rgb(255, 0, 0);
+    right: 0;
+    top: 0;
+    z-index: 10;
+    font-size: 30px;
+}
+
 .navbar {
     display: flex;
     height: 12vh;
@@ -30,7 +43,7 @@ input:focus {
     justify-content: space-between;
     box-shadow: #dddddd 2px 1px 5px,
         #eeeeee -8px -0px 15px;
-    z-index: 100;
+    z-index: 10000000;
     transition: .5s;
 }
 
@@ -103,6 +116,8 @@ input:focus {
     transition: transform 1.9s, opacity 0.2s;
     transform-origin: left;
 }
+
+
 
 
 .mainpage {

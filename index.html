@@ -8,8 +8,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-    <title>Covid-19.com</title>
+    <!--css loaded -->
+    <link rel="stylesheet" href="leaflet.css" />
+    <!--js library loaded -->
+    <script src="leaflet.js"></script>
+    <script src="https://leafletjs.com/examples/choropleth/us-states.js"></script>
+    <!--map height set -->
+    <style>
+      #mapid {
+        height: 500px;
+      }
+    </style>
   </head>
+
+  <script src="main.js" type="module"></script>
+
+  <script src="map.js" type="module"></script>
+
+  <title>Covid-19.com</title>
 
   <body>
     <div class="navbar">
@@ -21,10 +37,13 @@
           <a id="home" href="">
             <li>Home</li>
           </a>
-          <a id="map" href="">
-            <li id="map">Covid Map</li>
+          <a href="#mapid">
+            <li>Covid Map</li>
           </a>
-          <a id="stuff" href="">
+          <a
+            id="stuff"
+            href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html"
+          >
             <li>Stuff</li>
           </a>
           <a id="help" href="">
@@ -57,6 +76,7 @@
       <div id="site" class="actualsite">
         <div class="blueblock"></div>
         <div class="container">
+          <div id="mapid" style="display: hidden;"></div>
           <div class="content1">
             <div>
               <h1>Get News Updates On The Go</h1>
@@ -100,7 +120,7 @@
           </div>
 
           <div class="content2">
-            <h3>Trillions of stores closing worldwide</h3>
+            <h3 id="go">Trillions of stores closing worldwide</h3>
             <img src="closed.jpg" alt="" />
             <a href=""
               >Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a

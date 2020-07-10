@@ -37,7 +37,7 @@ input:focus {
     width: 70%;
     background-color: #e2f3f5;
     /* transform: skewY(-5deg);
-    transform-origin: top left; */
+    transform-origin: top right; */
     position: absolute;
     top: 0;
     right: 0;

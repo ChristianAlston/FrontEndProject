@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var currentScroll = $(this).scrollTop();
         if (currentScroll < 50) {
-            showTopNav();
+
         } else if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
             if (currentScroll > previousScroll) {
                 hideNav();
@@ -21,4 +21,10 @@ $(document).ready(function () {
     function showNav() {
         $(".navbar").removeClass("transform").addClass("is-visible");
     }
+});
+
+$(document).ready(function () {
+    $('#herobutton').on('click', function () {
+        $('#mapid').toggle();
+    });
 });
