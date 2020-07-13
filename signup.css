@@ -154,4 +154,5 @@ input:focus {
 .signmeup:hover {
     margin-top: -5px;
     box-shadow: #34105a -4px 19px 12px;
+    cursor: pointer;
 }

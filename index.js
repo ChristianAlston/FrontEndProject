@@ -15,16 +15,16 @@ $(document).ready(function () {
     });
 
     function hideNav() {
-        $(".navbar").removeClass("is-visible").addClass("transform");
+        $(".navbar").addClass("transform");
     }
 
     function showNav() {
-        $(".navbar").removeClass("transform").addClass("is-visible");
+        $(".navbar").removeClass("transform");
     }
 });
 
 $(document).ready(function () {
-    $('#herobutton').on('click', function () {
-        $('#mapid').toggle();
+    $('.burger').on('click', function () {
+        $('a').toggleClass('burgerup');
     });
 });
